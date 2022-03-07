@@ -1,0 +1,547 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* Landing Page */
+
+.landing-page {
+  min-height: 100vh;
+  background-color: #151718;
+  background-image: url("./img/stars.png");
+  display: flex;
+  justify-content: center;
+}
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-head h1 {
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  color: #fe3b1f;
+  font-size: 9.6rem;
+  padding: 14rem;
+}
+.main-head button {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 2.4rem;
+  background-color: #fe3b1f;
+  border-radius: 5rem;
+  border: none;
+  padding: 2rem 7rem;
+  cursor: pointer;
+}
+.a1 {
+  color: white;
+  text-decoration: none;
+}
+.a2 {
+  padding-top: 4rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 2.4rem;
+}
+.ast {
+  animation: astro 3s infinite alternate ease-in-out;
+  top: 20%;
+}
+
+@keyframes astro {
+  from {
+    transform: translate(-5%, -5%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Personal Information */
+
+.personal-info {
+  min-height: 100vh;
+  display: flex;
+}
+.right1 {
+  width: 50vw;
+  background: #141517;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right1 h1 {
+  color: #fe3b1f;
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  font-size: 6.4rem;
+  padding-right: 15rem;
+  margin-top: 12rem;
+}
+.right1 p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  padding: 15rem 15rem;
+  line-height: 200%;
+}
+
+.left1 {
+  width: 50vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left1 h1 {
+  color: #fe3b1f;
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  font-size: 6.4rem;
+  padding: 8rem 10rem;
+  padding-top: 12rem;
+}
+.left1 input {
+  border: none;
+  border: 1px solid #525557;
+  font-style: italic;
+  font-size: 1.4rem;
+  padding: 1.6rem 6rem;
+  padding-right: 15rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.inputs1 {
+  display: flex;
+  justify-content: center;
+}
+.navigation-icons {
+  padding-top: 10rem;
+}
+.navigation-icons img {
+  padding: 0.5rem;
+}
+.next {
+  background-image: url("./img/Next.png");
+  padding: 1rem;
+  border: none;
+}
+.leftRight {
+  cursor: pointer;
+}
+
+/* Technical Skillset */
+
+.right2 {
+  width: 50vw;
+  background: #141517;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right2 h1 {
+  color: #fe3b1f;
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  font-size: 6.4rem;
+  margin-top: 12rem;
+}
+.right2 p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  padding: 15rem 15rem;
+  line-height: 200%;
+}
+.left2 input {
+  border: none;
+  border: 1px solid #525557;
+  font-style: italic;
+  font-size: 1.4rem;
+  padding: 1.6rem 6rem;
+  padding-right: 16.5rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 42rem;
+}
+.left2 {
+  width: 50vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left2 h1 {
+  color: #fe3b1f;
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  font-size: 6.4rem;
+  padding: 8rem 10rem;
+  padding-top: 12rem;
+}
+.inputs1 {
+  display: flex;
+  flex-direction: column;
+}
+.addLanguage {
+  display: block;
+  margin-left: auto;
+  margin-right: 3rem;
+  border: none;
+  background-color: #fe3b1f;
+  color: white;
+  padding: 1.5rem 2rem;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.skills {
+  border: none;
+  border: 1px solid #525557;
+  font-style: italic;
+  font-size: 1.4rem;
+  padding: 1.6rem 6rem;
+  padding-right: 30rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; /* Remove default arrow */
+  background-image: url("./img/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: 39rem;
+}
+.skills:focus {
+  outline: none;
+}
+.skills option {
+  font-size: 1.4rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Added Language Div */
+
+.mine {
+  display: flex;
+  align-items: center;
+  border: 1px solid #525557;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.mine h3 {
+  font-weight: 400;
+  flex: 1 1 10rem;
+}
+.mine h4 {
+  flex: 1 1 40rem;
+  font-weight: 400;
+}
+.butt {
+  background-size: cover;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Covid Page */
+
+.dateInput {
+  border: none;
+  border: 1px solid #525557;
+  font-style: italic;
+  font-size: 1.4rem;
+  padding: 1.48rem;
+  padding-left: 4rem;
+  margin: 2.5rem 0rem;
+  display: flex;
+  min-width: 42rem;
+}
+.left3 {
+  width: 50vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rem;
+}
+.left3 h1 {
+  color: #fe3b1f;
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  font-size: 6.4rem;
+  padding: 8rem 10rem;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+}
+.left3 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+.left3 label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+.radio1 {
+  margin: 2rem 0.8rem;
+}
+.first {
+  padding: 3rem 0rem;
+}
+
+.right3 {
+  width: 50vw;
+  background: #141517;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right3 h1 {
+  color: #fe3b1f;
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  font-size: 6.4rem;
+  margin-top: 12rem;
+}
+.right3 p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  padding: 15rem 15rem;
+  line-height: 200%;
+}
+.navigation-icons2 {
+  padding: 5rem 0rem;
+  margin-left: 17rem;
+}
+.navigation-icons2 img {
+  padding: 0.5rem;
+}
+
+/* Redberrian Insights */
+
+.left4 {
+  width: 50vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rem;
+}
+.left4 h1 {
+  color: #fe3b1f;
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  font-size: 6.4rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.left4 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+.left4 label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+.areaText {
+  resize: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 3rem 2.5rem;
+  font-size: 1.3rem;
+  margin: 1.4rem 0rem;
+  line-height: 1.6rem;
+}
+
+/* Submit */
+
+.submit-page {
+  min-height: 100vh;
+  background-color: #151618;
+  display: flex;
+  justify-content: center;
+}
+.submit-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.submit-head h1 {
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  color: #fe3b1f;
+  font-size: 9.6rem;
+  padding: 14rem;
+}
+.submit-head button {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 2.4rem;
+  background-color: #fe3b1f;
+  border-radius: 5rem;
+  border: none;
+  padding: 2rem 15rem;
+  cursor: pointer;
+  font-size: 3.6rem;
+}
+
+/* Submitted Applications Linst */
+
+.submittedPage {
+  min-height: 100vh;
+  background-color: #151718;
+}
+.submittedPage h1 {
+  font-family: "Rowdies", cursive;
+  color: white;
+  padding: 9.4rem 0rem;
+  letter-spacing: 0.11em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.6rem;
+  padding-left: 30%;
+}
+.submitted {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expand {
+  background-color: #fe3b1f;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  min-height: 5.6rem;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.expand h2 {
+  color: white;
+  margin-left: 2rem;
+  margin-right: auto;
+}
+.expand img {
+  filter: brightness(0) invert(1);
+  margin-right: 2rem;
+  margin-left: auto;
+}
+.expand img::selection {
+  background-color: transparent;
+}
+
+.expand img::moz-selection {
+  background-color: transparent;
+}
+
+.expand img::webkit-selection {
+  background-color: transparent;
+}
+.expanded-inside {
+  min-height: 154.2rem;
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  padding: 3.6rem 16.1rem;
+  justify-content: space-around;
+}
+.expanded-inside h3 {
+  font-size: 1.8rem;
+  color: #fe3b1f;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 1000;
+  text-decoration-line: underline;
+  padding-top: 2rem;
+}
+.bitSpace {
+  padding-bottom: 5rem;
+}
+.exp1 li,
+.exp2 li {
+  padding: 2rem 9rem;
+  display: flex;
+}
+.table1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+.table1 td {
+  padding: 2rem 0rem;
+  padding-right: 9rem;
+}
+.exp3,
+.exp2 {
+  font-family: "Montserrat", sans-serif;
+}
+.exp3 h4,
+.exp2 h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
+.exp3 h3,
+.exp3 h2 {
+  padding-top: 6rem;
+}
+.table3 tr {
+  display: flex;
+  align-items: center;
+}
+.table3 td {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 1rem 0rem;
+}
+.table3 img {
+  vertical-align: top;
+  padding-right: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+.pad {
+  padding: 4rem 0rem;
+}
+.visible {
+  display: none;
+}
+.error {
+  background-image: url("./img/warning.png");
+  background-repeat: no-repeat;
+  background-size: 7%;
+  background-position: center;
+  background-position-x: 98%;
+}
+input:focus {
+  outline: none;
+}
