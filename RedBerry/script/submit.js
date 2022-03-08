@@ -112,5 +112,5 @@ if(!something_special){
         },
         body: JSON.stringify(data)
     }).then(data => console.log(data))
-    location.replace("./thanks.html");
+    location.replace("https://beqagogberashvili.github.io/myRepository/RedBerry/html/thanks.html");
 }
