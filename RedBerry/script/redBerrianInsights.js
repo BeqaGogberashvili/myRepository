@@ -1,4 +1,4 @@
-console.log(localStorage);
+// If we already have recording, make them appear on page.
 
 const dev = localStorage.getItem("will_organize_devtalk");
 if(dev == "true"){
@@ -17,6 +17,8 @@ if(dev == "false"){
     localStorage.setItem("devtalk_topic", "");
 }
 
+// Last radio input checking
+
 if (document.querySelector('input[name="selection4"]')) {
     document.querySelectorAll('input[name="selection4"]').forEach((elem) => {
       elem.addEventListener("change", function(event) {
@@ -33,6 +35,8 @@ if (document.querySelector('input[name="selection4"]')) {
       });
     });
   }
+
+  // Same kind of appear() and hide() functions adding/removing <textarea> depending on radio input.
 
   function hide3(){
     const x = document.getElementById('first3');
@@ -63,6 +67,7 @@ if (document.querySelector('input[name="selection4"]')) {
     }
 }
 
+// If radios are filled we're ready to move on.
 
 function advance(){
     const sel1 = document.getElementById("yes3");
@@ -82,6 +87,7 @@ function advance(){
         }
     }
 
+    
   const nextButton = document.getElementById("nextButton");
   const nextButton2 = document.getElementById("nextButton2");
         nextButton.addEventListener('click', advance);

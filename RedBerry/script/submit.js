@@ -1,5 +1,5 @@
 
-
+// Checking which skills did user save and adding them to variables so they can be sent to API in right format.
 
 function postData() {
     let skills = [];
@@ -50,11 +50,11 @@ const last_name = localStorage.getItem("lastName");
 const email = localStorage.getItem("email");
 const phone = localStorage.getItem("phone-mask");
 const work_preference = localStorage.getItem("work_preference");
-const had_covid = localStorage.getItem("had_covid");//
+const had_covid = localStorage.getItem("had_covid");
 const had_covid_at = localStorage.getItem("had_covid_at");
-const vaccinated = localStorage.getItem("vaccinated");//
+const vaccinated = localStorage.getItem("vaccinated");
 const vaccinated_at = localStorage.getItem("vaccinated_at");
-const will_organize_devtalk = localStorage.getItem("will_organize_devtalk");//
+const will_organize_devtalk = localStorage.getItem("will_organize_devtalk");
 const devtalk_topic = localStorage.getItem("devtalk_topic");
 let something_special = localStorage.getItem("something_special");
 let covid;
@@ -85,9 +85,10 @@ if(!something_special){
   something_special = "Empty";
 }
 
+// Variables are filtered and filled, they are ready to be sent.
 
     const data = {
-        "token": "370b4718-3061-4dbe-b03b-90cca5e1f21f",
+        "token": "3c70ac2a-e9f8-4162-8dbb-0ad02acca77b",
         "first_name": first_name,
         "last_name": last_name,
         "email": email,
@@ -114,27 +115,3 @@ if(!something_special){
     }).then(data => console.log(data))
     location.replace("./thanks.html");
 }
-
-
-
-// {
-//     "token": "43759b36-583a-42a1-a968-540c9c4e7f81",
-//     "first_name": "gelabeqbadas",
-//     "last_name": "gelashvili",
-//     "email": "gelashvili@gela.ge",
-//     "phone": "+995591933382",
-//     "skills": [
-//       {
-//         "id": 1,
-//         "experience": 3
-//       }
-//     ],
-//     "work_preference": "from_home",
-//     "had_covid": true,
-//     "had_covid_at": "2022-02-23",
-//     "vaccinated": true,
-//     "vaccinated_at": "2022-02-23",
-//     "will_organize_devtalk": true,
-//     "devtalk_topic": "I would ...",
-//     "something_special": "I am special!"
-//   }

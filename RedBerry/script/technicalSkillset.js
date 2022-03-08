@@ -1,8 +1,11 @@
-console.log(localStorage);
+
+// Getting Skills list from API and fetching them. 
 
 fetch('https://bootcamp-2022.devtest.ge/api/skills')
   .then(response => response.json())
   .then(data => fetchSkills(data))
+
+    // Writing them into HTML as option values
 
   function fetchSkills(data) {
     data.map(e => {
@@ -10,13 +13,15 @@ fetch('https://bootcamp-2022.devtest.ge/api/skills')
         skillsSelector.innerHTML += `<option value='`+ e.title + `'>` + e.title + `</option>`
     })
 }
-function advance() {
+
+    function advance() {
     location.replace("./covid.html");
 }
 
+    // Function below checks if localStorage has saved skills. It gets 2 parameters, skill name and experience. Process of saving skills in localStorage is written below this function.
 
-
-
+    //This function creates as many <div>'s as user has added skills. Each one gets same class and img that serves removing purpose. removeHtml() function does that and is written at the end of this JS.
+    
 function addHtml(check, par) {
     const div = document.createElement('div');
     const skills = document.getElementById('skills').value;
@@ -53,6 +58,7 @@ function addHtml(check, par) {
 
   }
   
+  // Checking each result of saved skills and giving above functions parameters accordingly.
 
   const check1 = localStorage.getItem("HTML");
   if(check1){
@@ -87,17 +93,13 @@ function addHtml(check, par) {
       addHtml(check8, "Angular");
   }
 
-  
-
-
-
-
-
+// Using parameters function identifies which <div> must be removed
 
 function removeHtml(input, lang) {
     document.getElementById('area').removeChild(input.parentNode);
     localStorage.removeItem(lang);
 
+// if() there is no saved record of skills in localStorage then right arrow looses it's ability to advance to next page.
 
     if(localStorage.getItem("HTML") === null && localStorage.getItem("CSS") === null && localStorage.getItem("PHP") === null && localStorage.getItem("Laravel") === null && localStorage.getItem("React.JS") === null && localStorage.getItem("Vue.JS") === null && localStorage.getItem("Svelte") === null && localStorage.getItem("Angular") === null){
         const one = document.getElementById("nextButton");
@@ -109,10 +111,7 @@ function removeHtml(input, lang) {
 }
 
 
-// const one = document.getElementById("nextButton");
-//     one.addEventListener('click', function(){
-//         alert("Do not leave empty!");
-//     });
+
 
 
 

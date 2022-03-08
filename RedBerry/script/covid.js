@@ -1,11 +1,10 @@
-console.log(localStorage);
-
-
 const f = localStorage.getItem("work_preference");
 const s = localStorage.getItem("had_covid");
 const t = localStorage.getItem("vaccinated");
 const dateInput1check = localStorage.getItem("had_covid_at");
 const dateInput2check = localStorage.getItem("vaccinated_at");
+
+// Here I check if localStorage already has saved radio answers and in that case make them appear .checked if page refreshes 
 
 if(f){
     if(f == "from_office"){
@@ -27,7 +26,7 @@ if(s){
     } if (s == "false"){
         const sel = document.getElementById("no1");
         sel.checked = true;
-        localStorage.setItem("had_covid_at", "");
+        localStorage.setItem("had_covid_at", "2000-01-01");
     }
 }
 if(t){
@@ -38,12 +37,11 @@ if(t){
     } if (t == "false"){
         const sel = document.getElementById("no2");
         sel.checked = true;
-        localStorage.setItem("vaccinated_at", "");
+        localStorage.setItem("vaccinated_at", "2000-01-01");
     }
 }
 
-
-  
+  // appear1() and appear2() functions add html of date input in case user selected yes. hide1() and hide2() removes them
 
   function appear1(){
     const x = document.getElementById('first1');
@@ -74,12 +72,11 @@ if(t){
   }
   function hide2(){
     const x = document.getElementById('first2');
-    x.innerHTML = `
-    
-    `;
+    x.innerHTML = ``;
   }
 
-  
+  // Next 3 if() checkes radio inputs and adds them into localStorage accordingly
+
   if (document.querySelector('input[name="selection1"]')) {
     document.querySelectorAll('input[name="selection1"]').forEach((elem) => {
       elem.addEventListener("change", function(event) {
@@ -131,6 +128,15 @@ if(t){
     });
   }
 
+  // Adding function to right arrow.
+
+  const nextButton = document.getElementById("nextButton");
+  const nextButton2 = document.getElementById("nextButton2");
+        nextButton.addEventListener('click', advance);
+        nextButton2.addEventListener('click', advance);
+
+  // advance() function again.
+  
   function advance(){
     const sel1 = document.getElementById("sairme");
     const sel2 = document.getElementById("home");
@@ -153,8 +159,3 @@ if(t){
         location.replace("./redberrianInsights.html");
         }
     }
-
-  const nextButton = document.getElementById("nextButton");
-  const nextButton2 = document.getElementById("nextButton2");
-        nextButton.addEventListener('click', advance);
-        nextButton2.addEventListener('click', advance);
