@@ -123,6 +123,7 @@ html {
   margin: 3rem;
   display: flex;
   flex-direction: column;
+  min-width: 40rem;
 }
 .inputs1 {
   display: flex;
