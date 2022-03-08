@@ -112,5 +112,29 @@ if(!something_special){
         },
         body: JSON.stringify(data)
     }).then(data => console.log(data))
-    location.replace("https://beqagogberashvili.github.io/myRepository/RedBerry/html/thanks.html");
+    location.replace("./thanks.html");
 }
+
+
+
+// {
+//     "token": "43759b36-583a-42a1-a968-540c9c4e7f81",
+//     "first_name": "gelabeqbadas",
+//     "last_name": "gelashvili",
+//     "email": "gelashvili@gela.ge",
+//     "phone": "+995591933382",
+//     "skills": [
+//       {
+//         "id": 1,
+//         "experience": 3
+//       }
+//     ],
+//     "work_preference": "from_home",
+//     "had_covid": true,
+//     "had_covid_at": "2022-02-23",
+//     "vaccinated": true,
+//     "vaccinated_at": "2022-02-23",
+//     "will_organize_devtalk": true,
+//     "devtalk_topic": "I would ...",
+//     "something_special": "I am special!"
+//   }
