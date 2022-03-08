@@ -88,7 +88,7 @@ if(!something_special){
 // Variables are filtered and filled, they are ready to be sent.
 
     const data = {
-        "token": "3c70ac2a-e9f8-4162-8dbb-0ad02acca77b",
+        "token": "37fcd0a9-c49c-4884-a121-9143f84e827c",
         "first_name": first_name,
         "last_name": last_name,
         "email": email,
