@@ -1,11 +1,11 @@
 // Getting data from API using token.
 
 myHeaders = new Headers({
-  'Authorization': 'Token ' + "3c70ac2a-e9f8-4162-8dbb-0ad02acca77b",
+  'Authorization': 'Token ' + "37fcd0a9-c49c-4884-a121-9143f84e827c",
   'Content-Type': 'application/x-www-form-urlencoded'
 });
 
-fetch('https://bootcamp-2022.devtest.ge/api/applications?token=3c70ac2a-e9f8-4162-8dbb-0ad02acca77b', {
+fetch('https://bootcamp-2022.devtest.ge/api/applications?token=37fcd0a9-c49c-4884-a121-9143f84e827c', {
   headers: myHeaders,
   method: 'GET'
 })
