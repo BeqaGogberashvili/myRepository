@@ -87,7 +87,7 @@ if(!something_special){
 
 
     const data = {
-        "token": "3c70ac2a-e9f8-4162-8dbb-0ad02acca77b",
+        "token": "370b4718-3061-4dbe-b03b-90cca5e1f21f",
         "first_name": first_name,
         "last_name": last_name,
         "email": email,
