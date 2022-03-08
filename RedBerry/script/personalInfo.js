@@ -14,15 +14,24 @@ function advance() {
   if(firstName.value.length < 3){
     const fn = document.getElementById("firstName");
     fn.classList.add("error");
+  } else {
+    const fn = document.getElementById("firstName");
+    fn.classList.remove("error");
   }
   if(lastName.value.length < 3){
     const fn = document.getElementById("lastName");
     fn.classList.add("error");
+  } else {
+    const fn = document.getElementById("lastName");
+    fn.classList.remove("error");
   }
 if(!email.value.match(mailformat))
 {
   const fn = document.getElementById("email");
     fn.classList.add("error");
+} else {
+  const fn = document.getElementById("email");
+    fn.classList.remove("error");
 }
   
   if(tel.value.length !== 13 || tel.value.charAt(0) != "+" || tel.value.charAt(1) != "9" || tel.value.charAt(2) != "9" || tel.value.charAt(3) != "5" ){
