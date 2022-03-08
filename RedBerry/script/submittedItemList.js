@@ -1,9 +1,9 @@
 myHeaders = new Headers({
-  'Authorization': 'Token ' + "3c70ac2a-e9f8-4162-8dbb-0ad02acca77b",
+  'Authorization': 'Token ' + "370b4718-3061-4dbe-b03b-90cca5e1f21f",
   'Content-Type': 'application/x-www-form-urlencoded'
 });
 
-fetch('https://bootcamp-2022.devtest.ge/api/applications?token=3c70ac2a-e9f8-4162-8dbb-0ad02acca77b', {
+fetch('https://bootcamp-2022.devtest.ge/api/applications?token=370b4718-3061-4dbe-b03b-90cca5e1f21f', {
   headers: myHeaders,
   method: 'GET'
 })
